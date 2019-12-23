@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<input #input (keyup)="search.search(input.value)">
+<ul>
+  <li *ngFor="let item of search.items | async">
+    {{ item }}
+  </li>
+</ul>
